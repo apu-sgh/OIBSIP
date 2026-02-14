@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #facc15;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+/* GENERAL SECTION */
+.section {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #facc15;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* DARK ALTERNATE SECTION */
+.dark {
+    background: #111111;
+}
+
+/* CONTAINER FLEX */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IMAGE */
+.container img {
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    transition: 0.4s;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+/* TEXT */
+.text {
+    flex: 1;
+}
+
+/* LIST */
+.list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.list li::before {
+    content: "•";
+    color: #facc15;
+    position: absolute;
+    left: 0;
+}
+
+/* QUOTE */
+.quote {
+    background: #111111;
+    padding: 60px 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    border-top: 2px solid #333;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    border-top: 2px solid #333;
+    color: #888;
+}

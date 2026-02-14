@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart To-Do App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- LEFT SIDE (FORM) -->
+    <div class="form-section">
+        <h2>Add New Task</h2>
+
+        <input type="text" id="title" placeholder="Task Title">
+        <textarea id="description" placeholder="Task Description"></textarea>
+
+        <label>Due Date</label>
+        <input type="date" id="dueDate">
+
+        <label>Due Time</label>
+        <input type="time" id="dueTime">
+
+        <button class="save-btn" id="saveTask">Save Task</button>
+    </div>
+
+    <!-- RIGHT SIDE (TASK LIST) -->
+    <div class="task-section">
+
+        <div>
+            <h3 class="section-title">Pending Tasks</h3>
+            <div id="pendingList"></div>
+        </div>
+
+        <div>
+            <h3 class="section-title">Completed Tasks</h3>
+            <div id="completedList"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
